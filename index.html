@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--internal CSS style element in html-->
+    <style>
+       /* selector {
+            property name: value;
+            ^selector ^Declaration^
+        }*/
+        /* change color of links using a selector and pick any color */
+        /*element selectors>*/
+        /* to change link state color on hover or when clicked use:
+        a:hover or a::after */
+        body {
+            /* Red, Green, Blue, Transparency(decimal notation) */
+            background-color: rgba(175, 200, 200, 0.75);
+        }
+        h1{
+            color: aquamarine;
+        }
+        p{
+            background-color: rgba(138, 43, 226, 0.50);
+            color: aliceblue;
+        }
+        /*Class selector*/
+        .yellow {
+            color: yellow;
+        }
+        .uppercase {
+            text-transform: uppercase;
+        }
+        /*ID selector*/
+        #the-title {
+            text-decoration: underline wavy;
+        }
+        h4, p {
+            text-decoration: underline;
+        }
+        /*Nested selectors, strong element inside of p element*/
+        /* use ctrl + / shortcut to comment a line in css and html */
+        p strong {
+            color: rgb(17, 15, 19);
+        }
+
+    </style>
+</head>
+<body>
+    <!--Inline CSS-->
+    <!--This is not best practice-->
+    <h1 id="the-title" >This is an H1</h1>
+    <div class="yellow uppercase">
+        This is a div
+    </div>
+    <p>
+        This is a paragraph
+    </p>
+    <p class="uppercase">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta laborum suscipit sequi quisquam earum. Impedit eos quidem in placeat quia maiores deserunt. Delectus, nobis corporis libero animi nam dolor quidem!</p>
+
+    <h1 >This is another H1</h1>
+    <strong class="yellow">
+        This is bolded text!!
+    </strong>
+    <h4>This is another h4</h4>
+    <div>This is another div</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ad esse mollitia reprehenderit, autem ducimus numquam quae corrupti libero pariatur provident dolore exercitationem facilis neque rerum voluptatum similique expedita atque.</p>
+    <div>
+        <p>
+            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong> 
+            Fugit, hic. Voluptatem atque excepturi saepe doloribus, perferendis nisi molestias reprehenderit alias veritatis nulla commodi quibusdam repellendus voluptate quas sint ipsa asperiores.
+        </p>
+        
+      <strong>This is bold</strong>
+    </div>
+</body>
+</html>
